@@ -3,51 +3,82 @@
 #+email: tobias.denkinger@tu-dresden.de
 #+options: toc:nil \n:yes
 
+* Hinweise
+
+  - meine Mailadresse: [[mailto:tobias.denkinger@tu-dresden.de][tobias.denkinger@tu-dresden.de]]
+  - Fragen bitte
+    - während der Übung
+    - nach der Übung
+    - per Mail
+    - persönlich, nach Vereinbarung
+  - Checkt eure Unimailadresse!
+  - Checkt die Vorlesungswebseite (https://www.orchid.inf.tu-dresden.de/teaching/2017ws/aud/)!
+  - **Die Übung vom Mi., 22.11. (Buß- und Bettag) wird verlegt auf Do., 23.11., 7. DS (18:30–20:00 Uhr), APB/E023.**
+
 * Lösung zu Aufgabe 2.1.1
 
-| Begriff                  | Definition | Beispiel |
-|--------------------------+------------+----------|
-| Syntax                   |            |          |
-| Semantik                 |            |          |
-| Objektsprache            |            |          |
-| Metasprache              |            |          |
-| Alphabet                 |            |          |
-| Wort                     |            |          |
-| Konkatenation            |            |          |
-| (formale) Sprache L      |            |          |
-| Komplexprodukt           |            |          |
-| Stern L* einer Sprache L |            |          |
+|--------------------------+----------------------------------+-----------------------------------|
+| Begriff                  | Definition                       | Beispiel                          |
+|--------------------------+----------------------------------+-----------------------------------|
+| Syntax                   | Struktur, erlaubte Zeichenketten | SVO-Satz in germanischen Sprachen |
+|--------------------------+----------------------------------+-----------------------------------|
+| Semantik                 | Bedeutung einer Zeichenketten    | "=" steht für ein Assignment      |
+|--------------------------+----------------------------------+-----------------------------------|
+| Objektsprache            | zu betrachtende Sprache          | C                                 |
+|--------------------------+----------------------------------+-----------------------------------|
+| Metasprache              | Hilfssprache zur Beschreibung    | EBNF                              |
+|                          | der Objektsprache                |                                   |
+|--------------------------+----------------------------------+-----------------------------------|
+| Alphabet                 | Zeichenvorrat                    | Σ = {0, 1}                        |
+|--------------------------+----------------------------------+-----------------------------------|
+| Wort                     | endliche Zeichenkette            | 0, 1, 01, ε                       |
+|--------------------------+----------------------------------+-----------------------------------|
+| Konkatenation            | Verkettung von Wörtern           | 0 ⋅ 01 = 001, 1 ⋅ ε = 1           |
+|--------------------------+----------------------------------+-----------------------------------|
+| (formale) Sprache L      | Menge von Zeichenketten          | L ⊆ Σ*                            |
+|--------------------------+----------------------------------+-----------------------------------|
+| Komplexprodukt           | Verknüpfung von Sprachen         |                                   |
+|                          | L₁ ⋅ L₂ = {uv ∣ u ∈ L₁, v ∈ L₂}  | {0, 1}{01} = {001, 101}           |
+|--------------------------+----------------------------------+-----------------------------------|
+| Stern L* einer Sprache L | L* = ⋃(Lᵏ ∣ k ∈ ℕ)               | {1}* = {ε, 1, 11, 111, …}         |
+|                          | Lᵏ = L^(k-1) ⋅ L, L⁰ = {ε}       |                                   |
+|--------------------------+----------------------------------+-----------------------------------|
 
 * Lösung zu Aufgabe 2.1.2
 
-  - Σ* ∋ 
-  - P(Σ*) ∋
+  - Σ = {1, 2, a, b}
+  - Σ* ⊇ {1, 12, a21b, ε} (Menge erster Ordnung)
+  - P(Σ*) ⊇ {∅, {ε}, {1}, {a21b}, {1, 12, a21b, ε}}  (Menge zweiter Ordnung)
 
 * Lösung zu Aufgabe 2.1.3
 
-  - L₁ = {a}
-    L₂ = {b}
+  - L₁ = {a},
+    L₂ = {b},
     L₃ = {a, ba}
-  - L₁ ⋅ L₂ ⋅ L₃ = 
-  - L₁* = 
-  - L₃* =
-  - L₂* ⋅ L₁ = 
-  - P(L₁*)
+  - (L₁ ⋅ L₂) ⋅ L₃ = ({a}{b}){a, ba} = {ab}{a, ba} = {aba, abba}
+  - L₁* = {a}* = {ε} ∪ {a} ∪ {aa} ∪ … = {ε, a, aa, …} = {aᵏ ∣ i ∈ ℕ}
+  - L₃* = {a, ba}* = {ε} ∪ {a, ba} ∪ {aa, aba, baa, baba} ∪ …
+  - L₂* ⋅ L₁ = {b}* ⋅ {a} = {ε, b, bb, …} ⋅ {a} = {a, ba, bba, bbba, …} = {bᵏa ∣ k ∈ ℕ}
+  - P(L₁*) = {∅, {ε}, {a}, {aa}, {aaa}, …, {ε, a}, {ε, aa}, …} = {{aᵏ ∣ k ∈ I} ∣ I ⊆ ℕ}
 
 * Lösung zu Aufgabe 2.1.4
 
-  - L₁ = {b, bc}
-    L₂ = {a}
+  - L₁ = {b, bc},
+    L₂ = {a},
     L₃ = {ca, a}
-  - {aaa, aaca} = 
-  - {baca, baa, bcaca, bcaa} = 
-  - {ε, a, aa, ca, aaa, caa, aca, caca, …} = 
+  - {aaa, aaca} = L₂² ⋅ L₃
+  - {baca, baa, bcaca, bcaa} = L₁ ⋅ {aca, aa} = L₁ ⋅ L₂ ⋅ {ca, a} = L₁ ⋅ L₂ ⋅ L₃ 
+  - {ε, a, aa, ca, aaa, caa, aca, caca, …} = L₃*
 
 * Lösung zu Aufgabe 2.1.5
 
   - {a} ⋅ L₁ ∪ {b} = L₁
-    L₁ =
+    - L₁ = {b, ab, aab, aaab, …} = {aᵏb ∣ k ∈ ℕ}
   - {a} ⋅ L₂ ⋅ {b} ∪ {ε} ⊆ L₂
-    L₂ = 
+    - L₂ = {ε, ab, aabb, aaabbb, …} = {aᵏbᵏ ∣ k ∈ ℕ}
+    - L₂' = Σ*
   - L₃* = L₃
-    L₃ = 
+    - L₃ = {ε}
+    - L₃' = Σ*
+    - L₃'' = {ab}*
+

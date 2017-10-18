@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-10-16 Mo 16:26 -->
+<!-- 2017-10-18 Mi 09:15 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lösungen zum 1. Übungsblatt</title>
@@ -231,9 +231,28 @@ for the JavaScript code in this tag.
 <div id="content">
 <h1 class="title">Lösungen zum 1. Übungsblatt</h1>
 
-<div id="outline-container-orged5c6e9" class="outline-2">
-<h2 id="orged5c6e9"><span class="section-number-2">1</span> Lösung zu Aufgabe 2.1.1</h2>
+<div id="outline-container-org3cfb6d1" class="outline-2">
+<h2 id="org3cfb6d1"><span class="section-number-2">1</span> Hinweise</h2>
 <div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>meine Mailadresse: <a href="mailto:tobias.denkinger@tu-dresden.de">tobias.denkinger@tu-dresden.de</a><br /></li>
+<li>Fragen bitte<br />
+<ul class="org-ul">
+<li>während der Übung<br /></li>
+<li>nach der Übung<br /></li>
+<li>per Mail<br /></li>
+<li>persönlich, nach Vereinbarung<br /></li>
+</ul></li>
+<li>Checkt eure Unimailadresse!<br /></li>
+<li>Checkt die Vorlesungswebseite (<a href="https://www.orchid.inf.tu-dresden.de/teaching/2017ws/aud/">https://www.orchid.inf.tu-dresden.de/teaching/2017ws/aud/</a>)!<br /></li>
+<li><b><b>Die Übung vom Mi., 22.11. (Buß- und Bettag) wird verlegt auf Do., 23.11., 7. DS (18:30–20:00 Uhr), APB/E023.</b></b><br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2b10965" class="outline-2">
+<h2 id="org2b10965"><span class="section-number-2">2</span> Lösung zu Aufgabe 2.1.1</h2>
+<div class="outline-text-2" id="text-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -254,61 +273,88 @@ for the JavaScript code in this tag.
 <tbody>
 <tr>
 <td class="org-left">Syntax</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Struktur, erlaubte Zeichenketten</td>
+<td class="org-left">SVO-Satz in germanischen Sprachen</td>
 </tr>
-
+</tbody>
+<tbody>
 <tr>
 <td class="org-left">Semantik</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Bedeutung einer Zeichenketten</td>
+<td class="org-left">"=" steht für ein Assignment</td>
 </tr>
-
+</tbody>
+<tbody>
 <tr>
 <td class="org-left">Objektsprache</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">zu betrachtende Sprache</td>
+<td class="org-left">C</td>
 </tr>
-
+</tbody>
+<tbody>
 <tr>
 <td class="org-left">Metasprache</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Hilfssprache zur Beschreibung</td>
+<td class="org-left">EBNF</td>
 </tr>
 
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">der Objektsprache</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
 <tr>
 <td class="org-left">Alphabet</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Zeichenvorrat</td>
+<td class="org-left">Σ = {0, 1}</td>
 </tr>
-
+</tbody>
+<tbody>
 <tr>
 <td class="org-left">Wort</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">endliche Zeichenkette</td>
+<td class="org-left">0, 1, 01, ε</td>
 </tr>
-
+</tbody>
+<tbody>
 <tr>
 <td class="org-left">Konkatenation</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Verkettung von Wörtern</td>
+<td class="org-left">0 ⋅ 01 = 001, 1 ⋅ ε = 1</td>
 </tr>
-
+</tbody>
+<tbody>
 <tr>
 <td class="org-left">(formale) Sprache L</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Menge von Zeichenketten</td>
+<td class="org-left">L ⊆ Σ*</td>
 </tr>
-
+</tbody>
+<tbody>
 <tr>
 <td class="org-left">Komplexprodukt</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Verknüpfung von Sprachen</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">Stern L* einer Sprache L</td>
 <td class="org-left">&#xa0;</td>
+<td class="org-left">L₁ ⋅ L₂ = {uv ∣ u ∈ L₁, v ∈ L₂}</td>
+<td class="org-left">{0, 1}{01} = {001, 101}</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Stern L* einer Sprache L</td>
+<td class="org-left">L* = ⋃(Lᵏ ∣ k ∈ ℕ)</td>
+<td class="org-left">{1}* = {ε, 1, 11, 111, …}</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Lᵏ = L<sup>(k-1)</sup> ⋅ L, L⁰ = {ε}</td>
 <td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
@@ -316,56 +362,66 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgd1bb6e8" class="outline-2">
-<h2 id="orgd1bb6e8"><span class="section-number-2">2</span> Lösung zu Aufgabe 2.1.2</h2>
-<div class="outline-text-2" id="text-2">
-<ul class="org-ul">
-<li>Σ* ∋<br /></li>
-<li>P(Σ*) ∋<br /></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org7febda3" class="outline-2">
-<h2 id="org7febda3"><span class="section-number-2">3</span> Lösung zu Aufgabe 2.1.3</h2>
+<div id="outline-container-orgba9548a" class="outline-2">
+<h2 id="orgba9548a"><span class="section-number-2">3</span> Lösung zu Aufgabe 2.1.2</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
-<li>L₁ = {a}<br />
-L₂ = {b}<br />
-L₃ = {a, ba}<br /></li>
-<li>L₁ ⋅ L₂ ⋅ L₃ =<br /></li>
-<li>L₁* =<br /></li>
-<li>L₃* =<br /></li>
-<li>L₂* ⋅ L₁ =<br /></li>
-<li>P(L₁*)<br /></li>
+<li>Σ = {1, 2, a, b}<br /></li>
+<li>Σ* ⊇ {1, 12, a21b, ε} (Menge erster Ordnung)<br /></li>
+<li>P(Σ*) ⊇ {∅, {ε}, {1}, {a21b}, {1, 12, a21b, ε}}  (Menge zweiter Ordnung)<br /></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org3606d2c" class="outline-2">
-<h2 id="org3606d2c"><span class="section-number-2">4</span> Lösung zu Aufgabe 2.1.4</h2>
+<div id="outline-container-org8fdfce0" class="outline-2">
+<h2 id="org8fdfce0"><span class="section-number-2">4</span> Lösung zu Aufgabe 2.1.3</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
-<li>L₁ = {b, bc}<br />
-L₂ = {a}<br />
-L₃ = {ca, a}<br /></li>
-<li>{aaa, aaca} =<br /></li>
-<li>{baca, baa, bcaca, bcaa} =<br /></li>
-<li>{ε, a, aa, ca, aaa, caa, aca, caca, …} =<br /></li>
+<li>L₁ = {a},<br />
+L₂ = {b},<br />
+L₃ = {a, ba}<br /></li>
+<li>(L₁ ⋅ L₂) ⋅ L₃ = ({a}{b}){a, ba} = {ab}{a, ba} = {aba, abba}<br /></li>
+<li>L₁* = {a}* = {ε} ∪ {a} ∪ {aa} ∪ … = {ε, a, aa, …} = {aᵏ ∣ i ∈ ℕ}<br /></li>
+<li>L₃* = {a, ba}* = {ε} ∪ {a, ba} ∪ {aa, aba, baa, baba} ∪ …<br /></li>
+<li>L₂* ⋅ L₁ = {b}* ⋅ {a} = {ε, b, bb, …} ⋅ {a} = {a, ba, bba, bbba, …} = {bᵏa ∣ k ∈ ℕ}<br /></li>
+<li>P(L₁*) = {∅, {ε}, {a}, {aa}, {aaa}, …, {ε, a}, {ε, aa}, …} = {{aᵏ ∣ k ∈ I} ∣ I ⊆ ℕ}<br /></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org2b2cad6" class="outline-2">
-<h2 id="org2b2cad6"><span class="section-number-2">5</span> Lösung zu Aufgabe 2.1.5</h2>
+<div id="outline-container-org78fb976" class="outline-2">
+<h2 id="org78fb976"><span class="section-number-2">5</span> Lösung zu Aufgabe 2.1.4</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
+<li>L₁ = {b, bc},<br />
+L₂ = {a},<br />
+L₃ = {ca, a}<br /></li>
+<li>{aaa, aaca} = L₂² ⋅ L₃<br /></li>
+<li>{baca, baa, bcaca, bcaa} = L₁ ⋅ {aca, aa} = L₁ ⋅ L₂ ⋅ {ca, a} = L₁ ⋅ L₂ ⋅ L₃<br /></li>
+<li>{ε, a, aa, ca, aaa, caa, aca, caca, …} = L₃*<br /></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org227428c" class="outline-2">
+<h2 id="org227428c"><span class="section-number-2">6</span> Lösung zu Aufgabe 2.1.5</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
 <li>{a} ⋅ L₁ ∪ {b} = L₁<br />
-L₁ =<br /></li>
+<ul class="org-ul">
+<li>L₁ = {b, ab, aab, aaab, …} = {aᵏb ∣ k ∈ ℕ}<br /></li>
+</ul></li>
 <li>{a} ⋅ L₂ ⋅ {b} ∪ {ε} ⊆ L₂<br />
-L₂ =<br /></li>
+<ul class="org-ul">
+<li>L₂ = {ε, ab, aabb, aaabbb, …} = {aᵏbᵏ ∣ k ∈ ℕ}<br /></li>
+<li>L₂' = Σ*<br /></li>
+</ul></li>
 <li>L₃* = L₃<br />
-L₃ =<br /></li>
+<ul class="org-ul">
+<li>L₃ = {ε}<br /></li>
+<li>L₃' = Σ*<br /></li>
+<li>L₃'' = {ab}*<br /></li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -373,7 +429,7 @@ L₃ =<br /></li>
 <div id="postamble" class="status">
 <p class="date">Date: 2017-10-18</p>
 <p class="author">Author: Tobias Denkinger</p>
-<p class="date">Created: 2017-10-16 Mo 16:26</p>
+<p class="date">Created: 2017-10-18 Mi 09:15</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
