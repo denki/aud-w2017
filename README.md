@@ -8,3 +8,4 @@ Materialien zur Übung Algorithmen und Datenstrukturen, WiSe 2017/2018, TU Dresd
 
 ## Direktlinks zu den gerenderten html-Dateien
 * [Übung1](http://htmlpreview.github.io/?https://github.com/denki/aud-w2017/blob/master/tut01/sol01.html)
+* [Übung2](http://htmlpreview.github.io/?https://github.com/denki/aud-w2017/blob/master/tut02/sol02.html)
