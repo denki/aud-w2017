@@ -1,0 +1,103 @@
+#+title: Lösungen zum 3. Übungsblatt
+#+date: 2017-11-01
+#+email: tobias.denkinger@tu-dresden.de
+#+options: toc:nil \n:yes
+
+* Lösung zu Aufgabe 2.2.24
+** Teilaufgabe a
+
+*siehe Tafel*
+
+** Teilaufgabe b
+
+| Wort     |      RM |
+|          |     <r> |
+|----------+---------|
+| ε        |       1 |
+| a        |     3 1 |
+| aa       |   +3+ 1 |
+| aab      |     +1+ |
+| aab      |       2 |
+| aaba     |     5 2 |
+| aabab    |   7 5 2 |
+| aababa   | +7+ 5 2 |
+| aababab  |   +5+ 2 |
+| aabababb |     +2+ |
+| aabababb |       – |
+
+* Lösung zu Aufgabe 2.2.22
+** Teilaufgabe a
+
+W(ℰ) = { a²ⁿcbⁿ ∣ n ∈ ℕ }
+
+** Teilaufgabe b
+
+*siehe Tafel*
+
+* Lösung zu Aufgabe 2.2.48
+** Teilaufgabe a
+
+V = {S, A}
+R:  S ::= aa{a}Aaa{a},  A ::= (aa{a} | bbAbbb)  // "(", "{", "}", "|", ")" mit Hut
+
+** Teilaufgabe b
+
+Sei ρ(S) = { aⁿwaⁿ ∣ n ≥ 0, w ∈ {ε, b} }.  Gilt ⟦(aSa|[b])⟧(ρ) = ρ(S)?
+
+Beweis:
+
+⟦(aSa|[b])⟧(ρ)
+= ⟦aSa⟧(ρ) ∪ ⟦[b]⟧(ρ)
+= ⟦a⟧(ρ) ⋅ ⟦S⟧(ρ) ⋅ ⟦a⟧(ρ) ∪ ⟦[b]⟧(ρ)
+= {a} ⋅ { aⁿwaⁿ ∣ n ≥ 0, w ∈ {ε, b} } ⋅ {a} ∪ ⟦[b]⟧(ρ)
+= {a} ⋅ { aⁿwaⁿ ∣ n ≥ 0, w ∈ {ε, b} } ⋅ {a} ∪ ⟦b⟧(ρ) ∪ {ε}
+= {a} ⋅ { aⁿwaⁿ ∣ n ≥ 0, w ∈ {ε, b} } ⋅ {a} ∪ {b} ∪ {ε}
+= { aaⁿwaⁿa ∣ n ≥ 0, w ∈ {ε, b} } ∪ {ε, b}
+= { aⁿwaⁿ ∣ n ≥ 1, w ∈ {ε, b} } ∪ { aⁿwaⁿ ∣ n = 0, w ∈ {ε, b} }
+= { aⁿwaⁿ ∣ n ≥ 0, w ∈ {ε, b} }
+= ρ(S)
+
+** Teilaufgabe c
+
+| Wort     |    RM |
+|          |   <r> |
+|----------+-------|
+| a        |     1 |
+| acd      |   +1+ |
+| acd      |     1 |
+| acdc     |   2 1 |
+| acdccd   | +2+ 1 |
+| acdccdd  |   +1+ |
+| acdccddb |     – |
+   
+* Lösung zu Aufgabe 2.2.50
+** Teilaufgabe a
+
+V = {S, A}
+R:  S ::= (aSa|A),   A ::= ( aAb | {a}{(a|b)} )   // "(", "|", ")", "{", "}" mit Hut
+
+** Teilaufgabe b
+
+/Lösung für die eigentliche Aufgabe 2.2.50b/
+
+#+begin_src
+f(ρ) = ⎛ ⟦[aAb]⟧(ρ)   ⎞ = ⎛ {a} ⋅ ρ(A) ⋅ {b} ∪ {ε}  ⎞
+       ⎝ ⟦(Sc∣cS)⟧(ρ) ⎠   ⎝ ρ(S) ⋅ {c} ∪ {c} ⋅ ρ(S) ⎠
+
+⊥ = ⎛ ∅ ⎞
+    ⎝ ∅ ⎠
+  ↦ ⎛ {a} ⋅ ∅ ⋅ {b} ∪ {ε} ⎞ = ⎛ {ε} ⎞
+    ⎝ ∅ ⋅ {c} ∪ {c} ⋅ ∅   ⎠   ⎝ ∅   ⎠
+  ↦ ⎛ {a} ⋅ ∅ ⋅ {b} ∪ {ε}   ⎞ = ⎛ {ε} ⎞
+    ⎝ {ε} ⋅ {c} ∪ {c} ⋅ {ε} ⎠   ⎝ {c} ⎠
+  ↦ ⎛ {a} ⋅ {c} ⋅ {b} ∪ {ε} ⎞ = ⎛ {ε, acb} ⎞
+    ⎝ {ε} ⋅ {c} ∪ {c} ⋅ {ε} ⎠   ⎝ {c}      ⎠
+  ↦ ⎛ {a} ⋅ {c} ⋅ {b} ∪ {ε}           ⎞ = ⎛ {ε, acb}        ⎞
+    ⎝ {ε, acb} ⋅ {c} ∪ {c} ⋅ {ε, acb} ⎠   ⎝ {c, acbc, cacb} ⎠
+  ↦ ⎛ {a} ⋅ {c, acbc, cacb} ⋅ {b} ∪ {ε} ⎞ = ⎛ {ε, acb, aacbcb, acacbb} ⎞
+    ⎝ {ε, acb} ⋅ {c} ∪ {c} ⋅ {ε, acb}   ⎠   ⎝ {c, acbc, cacb}          ⎠
+#+end_src
+
+** Teilaufgabe c
+
+*nächste Übung*
