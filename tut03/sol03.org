@@ -28,7 +28,7 @@
 * Lösung zu Aufgabe 2.2.22
 ** Teilaufgabe a
 
-W(ℰ) = { a²ⁿcbⁿ ∣ n ∈ ℕ }
+W(ℰ) = { a²ⁿσbⁿ ∣ n ∈ ℕ, σ ∈ {a, c} }
 
 ** Teilaufgabe b
 
