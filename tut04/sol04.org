@@ -1,0 +1,56 @@
+#+title: Lösungen zum 4. Übungsblatt
+#+date: 2017-11-08
+#+email: tobias.denkinger@tu-dresden.de
+#+options: toc:nil \n:yes
+
+* Lösung zu Aufgabe 2.2.39
+** Teilaufgabe a
+
+#+begin_src
+f(ρ) = S:⎛ ⟦[B]b⟧(ρ)⎞ = ⎛ (ρ(B) ∪ {ε}) ⋅ {b} ⎞ = ⎛ ρ(B) ⋅ {b} ∪ {b} ⎞
+       B:⎝ ⟦Sb⟧(ρ)  ⎠   ⎝ ρ(S) ⋅ {b}         ⎠   ⎝ ρ(S) ⋅ {b}       ⎠
+
+⊥ = ⎛ ∅ ⎞
+    ⎝ ∅ ⎠
+  ↦ ⎛ {b} ⎞
+    ⎝ ∅   ⎠
+  ↦ ⎛ {b}  ⎞
+    ⎝ {bb} ⎠
+  ↦ ⎛ {b, bbb} ⎞
+    ⎝ {bb}     ⎠
+  ↦ ⎛ {b, bbb}   ⎞
+    ⎝ {bb, bbbb} ⎠
+  ↦ ⎛ {b¹, b³, b⁵} ⎞
+    ⎝ {b², b⁴}     ⎠
+#+end_src
+
+** Teilaufgabe b
+
+  * W(ℰ, S) = { b(bb)ⁱ | i ∈ ℕ }
+  * W(ℰ, B) = { bb(bb)ⁱ | i ∈ ℕ}
+
+** Teilaufgabe c
+
+Seien ρ(S) = ρ(A) = { (ba)ⁿb ∣ n ∈ ℕ }.  Zu zeigen: ⟦{ba}A⟧(ρ) = ρ(S).
+
+Beweis:
+
+⟦{ba}A⟧(ρ)
+= ⟦{ba}⟧(ρ) ⋅ ρ(A)
+= (⟦ba⟧(ρ))* ⋅ ρ(A)
+= {ba}* ⋅ ρ(A)
+= {ba}* ⋅ { (ba)ⁿb | n ∈ ℕ }
+= { (ba)ᵏ | k ∈ ℕ } ⋅ { (ba)ⁿb | n ∈ ℕ }
+= { (ba)ᵏ(ba)ⁿb | k, n ∈ ℕ }
+= { (ba)ⁿb | n ∈ ℕ }
+= ρ(S)
+ 
+* Lösung zu Aufgabe 3.1.2
+
+  * siehe [[file:sol04-2a.c]]
+  * siehe file:sol04-2b.c
+  * siehe file:sol04-2c.c
+
+* Lösung zu Aufgabe 3.1.6
+
+  * siehe file:sol04-3.c

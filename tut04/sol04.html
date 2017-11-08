@@ -6,7 +6,7 @@
 <!-- 2017-11-08 Mi 09:01 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Lösungen zum 3. Übungsblatt</title>
+<title>Lösungen zum 4. Übungsblatt</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Tobias Denkinger" />
 <style type="text/css">
@@ -229,141 +229,50 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Lösungen zum 3. Übungsblatt</h1>
+<h1 class="title">Lösungen zum 4. Übungsblatt</h1>
 
-<div id="outline-container-org382ae81" class="outline-2">
-<h2 id="org382ae81"><span class="section-number-2">1</span> Lösung zu Aufgabe 2.2.24</h2>
+<div id="outline-container-orga171976" class="outline-2">
+<h2 id="orga171976"><span class="section-number-2">1</span> Lösung zu Aufgabe 2.2.39</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org3752f67" class="outline-3">
-<h3 id="org3752f67"><span class="section-number-3">1.1</span> Teilaufgabe a</h3>
+<div id="outline-container-orge286504" class="outline-3">
+<h3 id="orge286504"><span class="section-number-3">1.1</span> Teilaufgabe a</h3>
 <div class="outline-text-3" id="text-1-1">
-<p>
-<b>siehe Tafel</b><br />
-</p>
+<pre class="example">
+f(ρ) = S:⎛ ⟦[B]b⟧(ρ)⎞ = ⎛ (ρ(B) ∪ {ε}) ⋅ {b} ⎞ = ⎛ ρ(B) ⋅ {b} ∪ {b} ⎞
+       B:⎝ ⟦Sb⟧(ρ)  ⎠   ⎝ ρ(S) ⋅ {b}         ⎠   ⎝ ρ(S) ⋅ {b}       ⎠
+
+⊥ = ⎛ ∅ ⎞
+    ⎝ ∅ ⎠
+  ↦ ⎛ {b} ⎞
+    ⎝ ∅   ⎠
+  ↦ ⎛ {b}  ⎞
+    ⎝ {bb} ⎠
+  ↦ ⎛ {b, bbb} ⎞
+    ⎝ {bb}     ⎠
+  ↦ ⎛ {b, bbb}   ⎞
+    ⎝ {bb, bbbb} ⎠
+  ↦ ⎛ {b¹, b³, b⁵} ⎞
+    ⎝ {b², b⁴}     ⎠
+</pre>
 </div>
 </div>
 
-<div id="outline-container-org01dbfee" class="outline-3">
-<h3 id="org01dbfee"><span class="section-number-3">1.2</span> Teilaufgabe b</h3>
+<div id="outline-container-orge049c40" class="outline-3">
+<h3 id="orge049c40"><span class="section-number-3">1.2</span> Teilaufgabe b</h3>
 <div class="outline-text-3" id="text-1-2">
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Wort</th>
-<th scope="col" class="org-right">RM</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">ε</td>
-<td class="org-right">1</td>
-</tr>
-
-<tr>
-<td class="org-left">a</td>
-<td class="org-right">3 1</td>
-</tr>
-
-<tr>
-<td class="org-left">aa</td>
-<td class="org-right"><del>3</del> 1</td>
-</tr>
-
-<tr>
-<td class="org-left">aab</td>
-<td class="org-right"><del>1</del></td>
-</tr>
-
-<tr>
-<td class="org-left">aab</td>
-<td class="org-right">2</td>
-</tr>
-
-<tr>
-<td class="org-left">aaba</td>
-<td class="org-right">5 2</td>
-</tr>
-
-<tr>
-<td class="org-left">aabab</td>
-<td class="org-right">7 5 2</td>
-</tr>
-
-<tr>
-<td class="org-left">aababa</td>
-<td class="org-right"><del>7</del> 5 2</td>
-</tr>
-
-<tr>
-<td class="org-left">aababab</td>
-<td class="org-right"><del>5</del> 2</td>
-</tr>
-
-<tr>
-<td class="org-left">aabababb</td>
-<td class="org-right"><del>2</del></td>
-</tr>
-
-<tr>
-<td class="org-left">aabababb</td>
-<td class="org-right">–</td>
-</tr>
-</tbody>
-</table>
-</div>
+<ul class="org-ul">
+<li>W(ℰ, S) = { b(bb)ⁱ | i ∈ ℕ }<br /></li>
+<li>W(ℰ, B) = { bb(bb)ⁱ | i ∈ ℕ}<br /></li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-org2cf939c" class="outline-2">
-<h2 id="org2cf939c"><span class="section-number-2">2</span> Lösung zu Aufgabe 2.2.22</h2>
-<div class="outline-text-2" id="text-2">
-</div>
-<div id="outline-container-orgd545607" class="outline-3">
-<h3 id="orgd545607"><span class="section-number-3">2.1</span> Teilaufgabe a</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org32f947c" class="outline-3">
+<h3 id="org32f947c"><span class="section-number-3">1.3</span> Teilaufgabe c</h3>
+<div class="outline-text-3" id="text-1-3">
 <p>
-W(ℰ) = { a²ⁿσbⁿ ∣ n ∈ ℕ, σ ∈ {a, c} }<br />
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgab25943" class="outline-3">
-<h3 id="orgab25943"><span class="section-number-3">2.2</span> Teilaufgabe b</h3>
-<div class="outline-text-3" id="text-2-2">
-<p>
-<b>siehe Tafel</b><br />
-</p>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org511b459" class="outline-2">
-<h2 id="org511b459"><span class="section-number-2">3</span> Lösung zu Aufgabe 2.2.48</h2>
-<div class="outline-text-2" id="text-3">
-</div>
-<div id="outline-container-orga924c93" class="outline-3">
-<h3 id="orga924c93"><span class="section-number-3">3.1</span> Teilaufgabe a</h3>
-<div class="outline-text-3" id="text-3-1">
-<p>
-V = {S, A}<br />
-R:  S ::= aa{a}Aaa{a},  A ::= (aa{a} | bbAbbb)  // "(", "{", "}", "|", ")" mit Hut<br />
-</p>
-</div>
-</div>
-
-<div id="outline-container-org73de50b" class="outline-3">
-<h3 id="org73de50b"><span class="section-number-3">3.2</span> Teilaufgabe b</h3>
-<div class="outline-text-3" id="text-3-2">
-<p>
-Sei ρ(S) = { aⁿwaⁿ ∣ n ≥ 0, w ∈ {ε, b} }.  Gilt ⟦(aSa|[b])⟧(ρ) = ρ(S)?<br />
+Seien ρ(S) = ρ(A) = { (ba)ⁿb ∣ n ∈ ℕ }.  Zu zeigen: ⟦{ba}A⟧(ρ) = ρ(S).<br />
 </p>
 
 <p>
@@ -371,131 +280,42 @@ Beweis:<br />
 </p>
 
 <p>
-⟦(aSa|[b])⟧(ρ)<br />
-= ⟦aSa⟧(ρ) ∪ ⟦[b]⟧(ρ)<br />
-= ⟦a⟧(ρ) ⋅ ⟦S⟧(ρ) ⋅ ⟦a⟧(ρ) ∪ ⟦[b]⟧(ρ)<br />
-= {a} ⋅ { aⁿwaⁿ ∣ n ≥ 0, w ∈ {ε, b} } ⋅ {a} ∪ ⟦[b]⟧(ρ)<br />
-= {a} ⋅ { aⁿwaⁿ ∣ n ≥ 0, w ∈ {ε, b} } ⋅ {a} ∪ ⟦b⟧(ρ) ∪ {ε}<br />
-= {a} ⋅ { aⁿwaⁿ ∣ n ≥ 0, w ∈ {ε, b} } ⋅ {a} ∪ {b} ∪ {ε}<br />
-= { aaⁿwaⁿa ∣ n ≥ 0, w ∈ {ε, b} } ∪ {ε, b}<br />
-= { aⁿwaⁿ ∣ n ≥ 1, w ∈ {ε, b} } ∪ { aⁿwaⁿ ∣ n = 0, w ∈ {ε, b} }<br />
-= { aⁿwaⁿ ∣ n ≥ 0, w ∈ {ε, b} }<br />
+⟦{ba}A⟧(ρ)<br />
+= ⟦{ba}⟧(ρ) ⋅ ρ(A)<br />
+= (⟦ba⟧(ρ))* ⋅ ρ(A)<br />
+= {ba}* ⋅ ρ(A)<br />
+= {ba}* ⋅ { (ba)ⁿb | n ∈ ℕ }<br />
+= { (ba)ᵏ | k ∈ ℕ } ⋅ { (ba)ⁿb | n ∈ ℕ }<br />
+= { (ba)ᵏ(ba)ⁿb | k, n ∈ ℕ }<br />
+= { (ba)ⁿb | n ∈ ℕ }<br />
 = ρ(S)<br />
 </p>
 </div>
 </div>
-
-<div id="outline-container-org8cb4e75" class="outline-3">
-<h3 id="org8cb4e75"><span class="section-number-3">3.3</span> Teilaufgabe c</h3>
-<div class="outline-text-3" id="text-3-3">
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-right" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Wort</th>
-<th scope="col" class="org-right">RM</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">a</td>
-<td class="org-right">1</td>
-</tr>
-
-<tr>
-<td class="org-left">acd</td>
-<td class="org-right"><del>1</del></td>
-</tr>
-
-<tr>
-<td class="org-left">acd</td>
-<td class="org-right">1</td>
-</tr>
-
-<tr>
-<td class="org-left">acdc</td>
-<td class="org-right">2 1</td>
-</tr>
-
-<tr>
-<td class="org-left">acdccd</td>
-<td class="org-right"><del>2</del> 1</td>
-</tr>
-
-<tr>
-<td class="org-left">acdccdd</td>
-<td class="org-right"><del>1</del></td>
-</tr>
-
-<tr>
-<td class="org-left">acdccddb</td>
-<td class="org-right">–</td>
-</tr>
-</tbody>
-</table>
 </div>
+
+<div id="outline-container-org98047ba" class="outline-2">
+<h2 id="org98047ba"><span class="section-number-2">2</span> Lösung zu Aufgabe 3.1.2</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>siehe <a href="sol04-2a.c">sol04-2a.c</a><br /></li>
+<li>siehe <a href="sol04-2b.c">sol04-2b.c</a><br /></li>
+<li>siehe <a href="sol04-2c.c">sol04-2c.c</a><br /></li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-org7c618a7" class="outline-2">
-<h2 id="org7c618a7"><span class="section-number-2">4</span> Lösung zu Aufgabe 2.2.50</h2>
-<div class="outline-text-2" id="text-4">
-</div>
-<div id="outline-container-orgbd739ac" class="outline-3">
-<h3 id="orgbd739ac"><span class="section-number-3">4.1</span> Teilaufgabe a</h3>
-<div class="outline-text-3" id="text-4-1">
-<p>
-V = {S, A}<br />
-R:  S ::= (aSa|A),   A ::= ( aAb | {a}{(a|b)} )   // "(", "|", ")", "{", "}" mit Hut<br />
-</p>
-</div>
-</div>
-
-<div id="outline-container-org8b466d6" class="outline-3">
-<h3 id="org8b466d6"><span class="section-number-3">4.2</span> Teilaufgabe b</h3>
-<div class="outline-text-3" id="text-4-2">
-<p>
-<i>Lösung für die eigentliche Aufgabe 2.2.50b</i><br />
-</p>
-
-<pre class="example">
-f(ρ) = ⎛ ⟦[aAb]⟧(ρ)   ⎞ = ⎛ {a} ⋅ ρ(A) ⋅ {b} ∪ {ε}  ⎞
-       ⎝ ⟦(Sc∣cS)⟧(ρ) ⎠   ⎝ ρ(S) ⋅ {c} ∪ {c} ⋅ ρ(S) ⎠
-
-⊥ = ⎛ ∅ ⎞
-    ⎝ ∅ ⎠
-  ↦ ⎛ {a} ⋅ ∅ ⋅ {b} ∪ {ε} ⎞ = ⎛ {ε} ⎞
-    ⎝ ∅ ⋅ {c} ∪ {c} ⋅ ∅   ⎠   ⎝ ∅   ⎠
-  ↦ ⎛ {a} ⋅ ∅ ⋅ {b} ∪ {ε}   ⎞ = ⎛ {ε} ⎞
-    ⎝ {ε} ⋅ {c} ∪ {c} ⋅ {ε} ⎠   ⎝ {c} ⎠
-  ↦ ⎛ {a} ⋅ {c} ⋅ {b} ∪ {ε} ⎞ = ⎛ {ε, acb} ⎞
-    ⎝ {ε} ⋅ {c} ∪ {c} ⋅ {ε} ⎠   ⎝ {c}      ⎠
-  ↦ ⎛ {a} ⋅ {c} ⋅ {b} ∪ {ε}           ⎞ = ⎛ {ε, acb}        ⎞
-    ⎝ {ε, acb} ⋅ {c} ∪ {c} ⋅ {ε, acb} ⎠   ⎝ {c, acbc, cacb} ⎠
-  ↦ ⎛ {a} ⋅ {c, acbc, cacb} ⋅ {b} ∪ {ε} ⎞ = ⎛ {ε, acb, aacbcb, acacbb} ⎞
-    ⎝ {ε, acb} ⋅ {c} ∪ {c} ⋅ {ε, acb}   ⎠   ⎝ {c, acbc, cacb}          ⎠
-</pre>
-</div>
-</div>
-
-<div id="outline-container-org35bf585" class="outline-3">
-<h3 id="org35bf585"><span class="section-number-3">4.3</span> Teilaufgabe c</h3>
-<div class="outline-text-3" id="text-4-3">
-<p>
-<b>siehe Tafel</b><br />
-</p>
-</div>
+<div id="outline-container-org320b65b" class="outline-2">
+<h2 id="org320b65b"><span class="section-number-2">3</span> Lösung zu Aufgabe 3.1.6</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>siehe <a href="sol04-3.c">sol04-3.c</a><br /></li>
+</ul>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Date: 2017-11-01</p>
+<p class="date">Date: 2017-11-08</p>
 <p class="author">Author: Tobias Denkinger</p>
 <p class="date">Created: 2017-11-08 Mi 09:01</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>

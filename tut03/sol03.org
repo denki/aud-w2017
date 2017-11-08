@@ -100,4 +100,4 @@ f(ρ) = ⎛ ⟦[aAb]⟧(ρ)   ⎞ = ⎛ {a} ⋅ ρ(A) ⋅ {b} ∪ {ε}  ⎞
 
 ** Teilaufgabe c
 
-*nächste Übung*
+*siehe Tafel*
