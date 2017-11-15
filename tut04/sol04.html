@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-11-08 Mi 09:01 -->
+<!-- 2017-11-15 Mi 09:24 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Lösungen zum 4. Übungsblatt</title>
@@ -231,12 +231,12 @@ for the JavaScript code in this tag.
 <div id="content">
 <h1 class="title">Lösungen zum 4. Übungsblatt</h1>
 
-<div id="outline-container-orga171976" class="outline-2">
-<h2 id="orga171976"><span class="section-number-2">1</span> Lösung zu Aufgabe 2.2.39</h2>
+<div id="outline-container-org0f1cb17" class="outline-2">
+<h2 id="org0f1cb17"><span class="section-number-2">1</span> Lösung zu Aufgabe 2.2.39</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orge286504" class="outline-3">
-<h3 id="orge286504"><span class="section-number-3">1.1</span> Teilaufgabe a</h3>
+<div id="outline-container-org8d922d2" class="outline-3">
+<h3 id="org8d922d2"><span class="section-number-3">1.1</span> Teilaufgabe a</h3>
 <div class="outline-text-3" id="text-1-1">
 <pre class="example">
 f(ρ) = S:⎛ ⟦[B]b⟧(ρ)⎞ = ⎛ (ρ(B) ∪ {ε}) ⋅ {b} ⎞ = ⎛ ρ(B) ⋅ {b} ∪ {b} ⎞
@@ -258,8 +258,8 @@ f(ρ) = S:⎛ ⟦[B]b⟧(ρ)⎞ = ⎛ (ρ(B) ∪ {ε}) ⋅ {b} ⎞ = ⎛ ρ(B) �
 </div>
 </div>
 
-<div id="outline-container-orge049c40" class="outline-3">
-<h3 id="orge049c40"><span class="section-number-3">1.2</span> Teilaufgabe b</h3>
+<div id="outline-container-org54cb22f" class="outline-3">
+<h3 id="org54cb22f"><span class="section-number-3">1.2</span> Teilaufgabe b</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>W(ℰ, S) = { b(bb)ⁱ | i ∈ ℕ }<br /></li>
@@ -268,8 +268,8 @@ f(ρ) = S:⎛ ⟦[B]b⟧(ρ)⎞ = ⎛ (ρ(B) ∪ {ε}) ⋅ {b} ⎞ = ⎛ ρ(B) �
 </div>
 </div>
 
-<div id="outline-container-org32f947c" class="outline-3">
-<h3 id="org32f947c"><span class="section-number-3">1.3</span> Teilaufgabe c</h3>
+<div id="outline-container-org6dc3c02" class="outline-3">
+<h3 id="org6dc3c02"><span class="section-number-3">1.3</span> Teilaufgabe c</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 Seien ρ(S) = ρ(A) = { (ba)ⁿb ∣ n ∈ ℕ }.  Zu zeigen: ⟦{ba}A⟧(ρ) = ρ(S).<br />
@@ -294,30 +294,119 @@ Beweis:<br />
 </div>
 </div>
 
-<div id="outline-container-org98047ba" class="outline-2">
-<h2 id="org98047ba"><span class="section-number-2">2</span> Lösung zu Aufgabe 3.1.2</h2>
+<div id="outline-container-org465cbe5" class="outline-2">
+<h2 id="org465cbe5"><span class="section-number-2">2</span> Lösung zu Aufgabe 3.1.2</h2>
 <div class="outline-text-2" id="text-2">
-<ul class="org-ul">
-<li>siehe <a href="sol04-2a.c">sol04-2a.c</a><br /></li>
-<li>siehe <a href="sol04-2b.c">sol04-2b.c</a><br /></li>
-<li>siehe <a href="sol04-2c.c">sol04-2c.c</a><br /></li>
-</ul>
+</div>
+<div id="outline-container-org015332b" class="outline-3">
+<h3 id="org015332b"><span class="section-number-3">2.1</span> Teilaufgabe a</h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #268bd2;">#include</span> <span style="color: #2aa198;">&lt;</span><span style="color: #2aa198;">stdio.h</span><span style="color: #2aa198;">&gt;</span>
+
+<span style="color: #b58900;">int</span> <span style="color: #268bd2;">main</span><span style="color: #2aa198;">()</span> <span style="color: #2aa198;">{</span>
+  <span style="color: #b58900;">char</span> <span style="color: #268bd2;">name</span><span style="color: #b58900;">[</span><span style="color: #6c71c4;">100</span><span style="color: #b58900;">]</span>;
+
+  printf<span style="color: #b58900;">(</span><span style="color: #2aa198;">"Bitte Namen eingeben: "</span><span style="color: #b58900;">)</span>;
+  scanf<span style="color: #b58900;">(</span><span style="color: #2aa198;">"%s99"</span>, name<span style="color: #b58900;">)</span>;
+  printf<span style="color: #b58900;">(</span><span style="color: #2aa198;">"Hallo %s.\n"</span>, name<span style="color: #b58900;">)</span>;
+
+  <span style="color: #859900; font-weight: bold;">return</span> <span style="color: #6c71c4;">0</span>;
+<span style="color: #2aa198;">}</span>
+</pre>
+</div>
 </div>
 </div>
 
-<div id="outline-container-org320b65b" class="outline-2">
-<h2 id="org320b65b"><span class="section-number-2">3</span> Lösung zu Aufgabe 3.1.6</h2>
+<div id="outline-container-orge6d6537" class="outline-3">
+<h3 id="orge6d6537"><span class="section-number-3">2.2</span> Teilaufgabe b</h3>
+<div class="outline-text-3" id="text-2-2">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #268bd2;">#include</span><span style="color: #2aa198;">&lt;</span><span style="color: #2aa198;">stdio.h</span><span style="color: #2aa198;">&gt;</span>
+
+<span style="color: #b58900;">int</span> <span style="color: #268bd2;">main</span><span style="color: #2aa198;">()</span> <span style="color: #2aa198;">{</span>
+  <span style="color: #b58900;">int</span> <span style="color: #268bd2;">i</span>, <span style="color: #268bd2;">j</span>, <span style="color: #268bd2;">n</span>;
+
+  printf<span style="color: #b58900;">(</span><span style="color: #2aa198;">"n = "</span><span style="color: #b58900;">)</span>;
+  scanf<span style="color: #b58900;">(</span><span style="color: #2aa198;">"%u"</span>, &amp;n<span style="color: #b58900;">)</span>;
+
+  <span style="color: #859900; font-weight: bold;">for</span> <span style="color: #b58900;">(</span>i = <span style="color: #6c71c4;">1</span>; i &lt;= n; ++i<span style="color: #b58900;">)</span> <span style="color: #b58900;">{</span>
+    <span style="color: #859900; font-weight: bold;">for</span> <span style="color: #268bd2;">(</span>j = <span style="color: #6c71c4;">1</span>; j &lt;= n; ++j<span style="color: #268bd2;">)</span>
+      printf<span style="color: #268bd2;">(</span><span style="color: #2aa198;">"%u\t"</span>, i * j<span style="color: #268bd2;">)</span>;
+    printf<span style="color: #268bd2;">(</span><span style="color: #2aa198;">"\n"</span><span style="color: #268bd2;">)</span>;
+  <span style="color: #b58900;">}</span>
+
+  <span style="color: #859900; font-weight: bold;">return</span> <span style="color: #6c71c4;">0</span>;
+<span style="color: #2aa198;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgea65217" class="outline-3">
+<h3 id="orgea65217"><span class="section-number-3">2.3</span> Teilaufgabe c</h3>
+<div class="outline-text-3" id="text-2-3">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #268bd2;">#include</span><span style="color: #2aa198;">&lt;</span><span style="color: #2aa198;">stdio.h</span><span style="color: #2aa198;">&gt;</span>
+
+<span style="color: #268bd2;">#define</span> <span style="color: #268bd2;">LEN</span> <span style="color: #6c71c4;">1001</span>
+
+<span style="color: #b58900;">int</span> <span style="color: #268bd2;">main</span><span style="color: #2aa198;">()</span> <span style="color: #2aa198;">{</span>
+  <span style="color: #b58900;">unsigned</span> <span style="color: #b58900;">int</span> <span style="color: #268bd2;">sieve</span><span style="color: #b58900;">[</span>LEN<span style="color: #b58900;">]</span>;
+  <span style="color: #b58900;">unsigned</span> <span style="color: #b58900;">int</span> <span style="color: #268bd2;">i</span>, <span style="color: #268bd2;">j</span>;
+
+  sieve<span style="color: #b58900;">[</span><span style="color: #6c71c4;">0</span><span style="color: #b58900;">]</span> = <span style="color: #6c71c4;">0</span>;
+  sieve<span style="color: #b58900;">[</span><span style="color: #6c71c4;">1</span><span style="color: #b58900;">]</span> = <span style="color: #6c71c4;">0</span>;
+
+  <span style="color: #859900; font-weight: bold;">for</span> <span style="color: #b58900;">(</span>i = <span style="color: #6c71c4;">2</span>; i &lt; LEN; ++i<span style="color: #b58900;">)</span>
+    sieve<span style="color: #b58900;">[</span>i<span style="color: #b58900;">]</span> = <span style="color: #6c71c4;">1</span>;
+
+  <span style="color: #859900; font-weight: bold;">for</span> <span style="color: #b58900;">(</span>i = <span style="color: #6c71c4;">2</span>; i &lt; LEN; ++i<span style="color: #b58900;">)</span>
+    <span style="color: #859900; font-weight: bold;">if</span> <span style="color: #b58900;">(</span>sieve<span style="color: #268bd2;">[</span>i<span style="color: #268bd2;">]</span> == <span style="color: #6c71c4;">1</span><span style="color: #b58900;">)</span> <span style="color: #b58900;">{</span>
+      printf<span style="color: #268bd2;">(</span><span style="color: #2aa198;">"%u "</span>, i<span style="color: #268bd2;">)</span>;
+      <span style="color: #859900; font-weight: bold;">for</span> <span style="color: #268bd2;">(</span>j = <span style="color: #6c71c4;">2</span> * i; j &lt; LEN; j = j + i<span style="color: #268bd2;">)</span>
+        sieve<span style="color: #268bd2;">[</span>j<span style="color: #268bd2;">]</span> = <span style="color: #6c71c4;">0</span>;
+    <span style="color: #b58900;">}</span>
+  printf<span style="color: #b58900;">(</span><span style="color: #2aa198;">"\n"</span><span style="color: #b58900;">)</span>;
+
+  <span style="color: #859900; font-weight: bold;">return</span> <span style="color: #6c71c4;">0</span>;
+<span style="color: #2aa198;">}</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3354fd7" class="outline-2">
+<h2 id="org3354fd7"><span class="section-number-2">3</span> Lösung zu Aufgabe 3.1.6</h2>
 <div class="outline-text-2" id="text-3">
-<ul class="org-ul">
-<li>siehe <a href="sol04-3.c">sol04-3.c</a><br /></li>
-</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #268bd2;">#include</span><span style="color: #2aa198;">&lt;</span><span style="color: #2aa198;">stdio.h</span><span style="color: #2aa198;">&gt;</span>
+
+<span style="color: #b58900;">int</span> <span style="color: #268bd2;">main</span><span style="color: #2aa198;">()</span> <span style="color: #2aa198;">{</span>
+  <span style="color: #b58900;">int</span> <span style="color: #268bd2;">n</span>, <span style="color: #268bd2;">i</span>, <span style="color: #268bd2;">acc</span>;
+
+  printf<span style="color: #b58900;">(</span><span style="color: #2aa198;">"n = "</span><span style="color: #b58900;">)</span>;
+  scanf<span style="color: #b58900;">(</span><span style="color: #2aa198;">"%u"</span>, &amp;n<span style="color: #b58900;">)</span>;
+
+  acc = <span style="color: #6c71c4;">1</span>;
+
+  <span style="color: #859900; font-weight: bold;">for</span> <span style="color: #b58900;">(</span>i = <span style="color: #6c71c4;">1</span>; i &lt;=n; ++i<span style="color: #b58900;">)</span>
+    acc = acc * i;
+
+  printf<span style="color: #b58900;">(</span><span style="color: #2aa198;">"%u! = %u\n"</span>, n, acc<span style="color: #b58900;">)</span>;
+
+  <span style="color: #859900; font-weight: bold;">return</span> <span style="color: #6c71c4;">0</span>;
+<span style="color: #2aa198;">}</span>
+</pre>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: 2017-11-08</p>
 <p class="author">Author: Tobias Denkinger</p>
-<p class="date">Created: 2017-11-08 Mi 09:01</p>
+<p class="date">Created: 2017-11-15 Mi 09:24</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

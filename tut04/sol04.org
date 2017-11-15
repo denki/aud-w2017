@@ -46,11 +46,18 @@ Beweis:
 = ρ(S)
  
 * Lösung zu Aufgabe 3.1.2
+** Teilaufgabe a
 
-  * siehe [[file:sol04-2a.c]]
-  * siehe file:sol04-2b.c
-  * siehe file:sol04-2c.c
+#+include: "sol04-2a.c" src c
+
+** Teilaufgabe b
+
+#+include: "sol04-2b.c" src c
+
+** Teilaufgabe c
+
+#+include: "sol04-2c.c" src c
 
 * Lösung zu Aufgabe 3.1.6
 
-  * siehe file:sol04-3.c
+#+include: "sol04-3.c" src c
