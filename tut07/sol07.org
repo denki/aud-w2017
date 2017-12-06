@@ -36,3 +36,9 @@ j  i        i,j
         j       i       
             -----
 #+end_src
+
+* Lösung zu Aufgabe 6.2.12
+
+#+attr_org: :width 500
+#+attr_html: :width 500
+[[./sol07-3.png]]

@@ -1,0 +1,75 @@
+#+title: Lösungen zum 8. Übungsblatt
+#+date: 2017-12-06
+#+email: tobias.denkinger@tu-dresden.de
+#+options: toc:nil \n:yes
+
+* Lösungen zu Aufgabe 6.1.8
+
+#+begin_src
+9 13 [7] 6 10
+i           j
+
+9 13 [7] 6 10
+i        j
+
+6 13 [7] 9 10
+  i   j
+
+6 [7] 13 9 10
+   j   i
+
+  [6] 7 | 13 [9] 10
+   i  j   i       j
+
+  [6] 7 | 13 [9] 10
+  i,j     i   j
+
+  [6] 7 | [9] 13 10
+j     i    j   i
+-------   ---
+
+6 7 9 | [13] 10
+         i    j
+
+        [13] 10
+         i    j
+
+        10 [13]
+        j    i
+        ------- 
+#+end_src
+
+* Lösungen zu Aufgabe 6.2.11
+
+#+attr_org: :width 500
+#+attr_html: :width 500
+[[./sol08-2.png]]
+
+* Lösungen zu Aufgabe 7.10
+
+** Teilaufgabe a
+
+| Position |  0 |  1 | 2 |  3 |  4 | 5 | 6 |  7 |  8 | 9 |
+| Pattern  |  a |  a | b |  a |  a | a | c |  a |  a | b |
+| Tabelle  | -1 | -1 | 1 | -1 | -1 | 2 | 2 | -1 | -1 | 1 |
+
+** Teilaufgabe b
+
+| Position |  0 | 1 |  2 | 3 | 4 | 5 |
+| Pattern  |  c | b |    |   |   | a |
+| Tabelle  | -1 | 0 | -1 | 1 | 0 | 2 |
+
+* Lösungen zur 4ten Aufgabe
+** Teilaufgabe a
+
+#+attr_org: :width 500
+#+attr_html: :width 500
+[[./sol08-4a.png]]
+
+d(Dinstas, Distanz) = 4
+
+** Teilaufgabe b
+
+#+attr_org: :width 400
+#+attr_html: :width 400
+[[./sol08-4b.png]]
